@@ -78,3 +78,4 @@ Perintah untuk menghapus untracked files dari working directory
 
 27. git fsck
 Perintah ini digunakan untuk mengecek keutuhan file sistem git dan juga membantu mengidentifikasi objek yang rusak.
+
