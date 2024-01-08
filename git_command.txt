@@ -1,0 +1,74 @@
+1. git add
+Memindahkan perubahan dari working directory ke staging area
+
+2. git commit -m "[pesan commit]"
+Perintah ini digunakan untuk menyimpan perubahan file secara local.
+
+3. git init
+Sebuah command untuk inisiasi repository git baru.
+
+4. git branch
+Perintah ini dapat digunakan untuk menampilkan seluruh branch lokal yang ada di repository.
+
+5. git branch [nama branch]
+Perintah untuk membuat branch baru.
+
+6. git branch -d [nama branch]
+Perintah untuk menghapus branch lokal yang ada di repository.
+
+7. git pull
+Untuk mendapatkan update dari remote repository.
+
+8. git push 
+Untuk memindahkan local branch ke remote server, dengan beberapa jumlah commit.
+
+9. git checkout [nama branch]
+Perintah ini sering digunakan untuk berpindah dari branch satu dan lainnya.
+
+10. git checkout -b [nama branch]
+Perintah ini digunakan untuk membuat branch baru dan berpindah ke branch yang baru dibuat.
+
+11. git clone
+Membuat salinan identik dari repository yang sudah ada
+
+12. git log
+Untuk melihat perubahan dari project
+
+13. git merge
+Untuk menyatukan branch dev cabang yang sebelumnya sudah pernah dibuat dengan branch master.
+
+14. git remote
+Memberikan sebuah akses untuk membuat, melihat dan menghapus di repository lainnya.
+
+15. git status
+Perintah untuk memperlihatkan informasi yang dibutuhkan di branch tersebut.
+
+16. git revert
+Perintah ini untuk mengembalikan perubahan sebelumnya secara lokal atau remote
+
+17. git fetch
+Untuk update branch lokal.
+
+18. git config --global user.name "your_username"
+Untuk mengatur nama yang digunakan untuk proses commit yang akan dilakukan.
+
+19. git config --global user.email "your_email@example.com"
+Untuk mengatur nama yang digunakan untuk proses commit yang akan dilakukan.
+
+20. git show
+Menampilkan data dan perubahan konten pada spesifik commit.
+
+21. git stash
+Perintah ini menyimpan pekerjaan tanpa staging atau committing kode di repository kita dan ingin berpindah antar branch.
+
+22. git stash save
+Perintah ini menyimpan sementara seluruh file yang memiliki perubahan.
+
+23. git stash pop
+Perintah ini untuk mengembalikan file yang paling sering disembunyikan.
+
+24. git rm -r [file-name.txt]
+Perintah untuk menghapus file atau folder
+
+25. git reset -hard [some_commit]
+Perintah ini digunakan untuk mengembalikan working tree ke commit sebelumnya.
