@@ -72,3 +72,9 @@ Perintah untuk menghapus file atau folder
 
 25. git reset -hard [some_commit]
 Perintah ini digunakan untuk mengembalikan working tree ke commit sebelumnya.
+
+26. git clean
+Perintah untuk menghapus untracked files dari working directory
+
+27. git fsck
+Perintah ini digunakan untuk mengecek keutuhan file sistem git dan juga membantu mengidentifikasi objek yang rusak.
