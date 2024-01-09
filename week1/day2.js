@@ -151,36 +151,16 @@ function stringToArray(string) {
     let subArr1 = []
     // string length 17
     for (let i = 0; i < string.length; i++) {
-        if (string[i] == ',') {
+        if (string[i] === ',' || string[i + 1] === undefined) {
             // subArr1.push(string[i])
             output.push(subArr1)
             subArr1 = []
-        } else if (string[i] != ',') {
+        } else if (string[i] !== ',') {
             subArr1.push(string[i])
         }
     }
     return output
 }
-
-// function stringToArray(string) {
-//     let arr1 = []
-//     let subArr1 = []
-//     // string length 17
-//     for (let i = 0; i < string.length; i++) {
-//         arr1.push(string[i])
-//         if (string[i - 1] == ',') {
-//             arr1
-//         }
-//         // if (string[i] == ',') {
-//         //     // subArr1.push(string[i])
-//         //     arr1.push(subArr1)
-//         //     subArr1 = []
-//         // } else if (string[i] != ',') {
-//         //     subArr1.push(string[i])
-//         // }
-//     }
-//     return arr1
-// }
 
 console.log(stringToArray('aqrst,ukaei,ffooo'))
 
