@@ -24,9 +24,21 @@
                         <a href="#home">
                             <nav>HOME</nav>
                         </a>
-                        <nav>WORK</nav>
-                        <nav>CONTACT</nav>
-                        <nav>ABOUT ME</nav>
+                        <a href="#about">
+                            <nav>ABOUT</nav>
+                        </a>
+                        <a href="#features">
+                            <nav>GAME FEATURES</nav>
+                        </a>
+                        <a href="#system-req">
+                            <nav>SYSTEM REQUIREMENT</nav>
+                        </a>
+                        <a href="#press-quotes">
+                            <nav>QUOTES</nav>
+                        </a>
+                        <a href="#newsletter">
+                            <nav>NEWSLETTER</nav>
+                        </a>
                     </div>
                     <div class="headerlog">
                         <nav>SIGN UP</nav>
@@ -99,7 +111,7 @@
             </div>
         </section>
 
-        <section class="features">
+        <section id="features" class="features">
             <div class="main-features">
                 <div class="features-up">
                     <h3>What's so special?</h3>
@@ -145,7 +157,7 @@
             </div>
         </section>
 
-        <section class="system-req">
+        <section id="system-req" class="system-req">
             <h3>
                 Can My Computer Run this game?
             </h3>
@@ -153,54 +165,67 @@
                 <h1>
                     SYSTEM REQUIREMENTS
                 </h1>
-                <div class="grid-req">
-                    <div class="grid-item">
-                        <h4>
-                            OS:
-                        </h4>
-                        <p>
-                            Windows 7 64-bit only
-                            (No OSX support at this time)
-                        </p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>
-                            PROCESSOR:
-                        </h4>
-                        <p>
-                            Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
-                        </p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>
-                            MEMORY:
-                        </h4>
-                        <p>
-                            4 GB RAM
-                        </p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>
-                            STORAGE:
-                        </h4>
-                        <p>
-                            8 GB available space
-                        </p>
-                    </div>
-                    <div class="grid-item5">
-                        <h4>
-                            GRAPHICS:
-                        </h4>
-                        <p>
-                            NVIDIA GeForce GTX 660 2GB or
-                            AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
-                        </p>
+                <div class="table-req">
+                    <svg width="575" height="403" viewBox="0 0 575 403" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.3">
+                            <path
+                                d="M1.22388 402.057V1.36938L574.422 1.37128V393.409L564.805 402.057H151.256L146.447 393.409H73.3545L67.5841 402.057H1.22388Z"
+                                stroke="#979797" stroke-linecap="square" />
+                            <path d="M1.64728 252.253L574.422 252.253" stroke="#979797" stroke-linecap="square" />
+                            <path d="M1.57104 126.655L574.422 126.655" stroke="#979797" stroke-linecap="square" />
+                            <path d="M278.034 1.36938L278.034 252.253" stroke="#979797" stroke-linecap="square" />
+                        </g>
+                    </svg>
+
+                    <div class="grid-req">
+                        <div class="grid-item">
+                            <h4>
+                                OS:
+                            </h4>
+                            <p>
+                                Windows 7 64-bit only
+                                (No OSX support at this time)
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <h4>
+                                PROCESSOR:
+                            </h4>
+                            <p>
+                                Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <h4>
+                                MEMORY:
+                            </h4>
+                            <p>
+                                4 GB RAM
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <h4>
+                                STORAGE:
+                            </h4>
+                            <p>
+                                8 GB available space
+                            </p>
+                        </div>
+                        <div class="grid-item5">
+                            <h4>
+                                GRAPHICS:
+                            </h4>
+                            <p>
+                                NVIDIA GeForce GTX 660 2GB or
+                                AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="press-quotes">
+        <section id="press-quotes" class="press-quotes">
             <div class="main-quotes">
                 <div class="title-quotes">
                     <h1>
@@ -214,14 +239,15 @@
                     </button>
                 </div>
                 <div class="quotes">
-                    <div class="quote">
+                    <div class="quote" style="margin-left: 150px;">
                         <div class="profile-quote">
                             <div class="profile">
                                 <div class="profile-pict">
-                                    <img src="/week1/day3/image/evan.jpg" alt="" style="z-index: 1;">
-                                    <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <img src="/week1/day3/image/evan.jpg" alt="">
+                                    <!-- <svg width="65" height="65" viewBox="0 0 65 65" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="32.3873" cy="32.5696" r="32.1531" fill="#FFB548" />
-                                    </svg>
+                                    </svg> -->
                                 </div>
                                 <div class="profile-name">
                                     <h4>
@@ -246,8 +272,134 @@
                             June 18, 2021
                         </p>
                     </div>
+
+                    <div class="quote" style="margin: 30px 0px;">
+                        <div class="profile-quote">
+                            <div class="profile">
+                                <div class="profile-pict">
+                                    <img src="/week1/day3/image/jada.jpg" alt="">
+                                    <!-- <svg width="65" height="65" viewBox="0 0 65 65" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="32.3873" cy="32.5696" r="32.1531" fill="#FFB548" />
+                                    </svg> -->
+                                </div>
+                                <div class="profile-name">
+                                    <h4>
+                                        Jada Griffin
+                                    </h4>
+                                    <p>
+                                        Nerdreactor
+                                    </p>
+                                </div>
+                            </div>
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.3"
+                                    d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <p class="text-quote">
+                            “The next big thing in the world of streaming and survival games.”
+                        </p>
+                        <p class="time-quote">
+                            July 10, 2021
+                        </p>
+                    </div>
+
+                    <div class="quote" style="margin-left: 150px;">
+                        <div class="profile-quote">
+                            <div class="profile">
+                                <div class="profile-pict">
+                                    <img src="/week1/day3/image/aaron.jpg" alt="">
+                                    <!-- <svg width="65" height="65" viewBox="0 0 65 65" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="32.3873" cy="32.5696" r="32.1531" fill="#FFB548" />
+                                    </svg> -->
+                                </div>
+                                <div class="profile-name">
+                                    <h4>
+                                        Aaron Williams
+                                    </h4>
+                                    <p>
+                                        Uproxx
+                                    </p>
+                                </div>
+                            </div>
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.3"
+                                    d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <p class="text-quote">
+                            “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
+                        </p>
+                        <p class="time-quote">
+                            December 24, 2018
+                        </p>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section id="newsletter" class="newsletter">
+            <div>
+                <div class="newsletter-main">
+                    <!-- <img src="/week1/day3/image/bg-newsletter.png" alt=""> -->
+                    <div class="bg-newsletter"></div>
+                    <div>
+                        <h3>
+                            Want to stay in touch?
+                        </h3>
+                        <h1>
+                            newsletter SUBSCRIBE
+                        </h1>
+                        <p class="desc-newsletter">
+                            In order to start receiving our news, all you have to do is enter your email address.
+                            Everything else will be taken care of by us. We will send you emails containing information
+                            about game. We don’t spam.
+                        </p>
+                        <div class="send-email">
+                            <div class="input-email">
+                                <p class="title-email">
+                                    Your email address
+                                </p>
+                                <p class="email">
+                                    youremail@binar.co.id
+                                </p>
+                            </div>
+                            <button>
+                                Subscribe Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <footer>
+                <div class="navbar-bottom">
+                    <ul>
+                        <li><a href="">MAIN</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href=""> GAME FEATURES</a></li>
+                        <li><a href="">SYSTEM REQUIREMENTS</a></li>
+                        <li><a href="">QUOTES</a></li>
+                        <li><img src="/week1/day3/image/Social.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="copy-privacy">
+                    <p class="copyright">
+                        © 2018 Your Games, Inc. All Rights Reserved
+                    </p>
+                    <p class="privacy">
+                        Privacy Policy | Terms of Services | Code of Conduct
+                    </p>
+                </div>
+            </footer>
         </section>
     </body>
 
