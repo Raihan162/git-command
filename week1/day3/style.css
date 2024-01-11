@@ -32,7 +32,7 @@ body section {
 #home {
     background:
         radial-gradient(ellipse farthest-corner at 50% 20%, rgba(0, 0, 0, 0) 10%, #080A0B 85%),
-        url(/week1/day3/image/bg-image.png) center/cover;
+        url(/image/bg-image.png) center/cover;
 }
 
 nav {
@@ -159,7 +159,7 @@ div .logo {
 }
 
 .about {
-    background: radial-gradient(ellipse closest-corner at center, rgba(0, 0, 0, 0) 10%, #080A0B 70%), url(/week1/day3/image/bg-image2.png) center/cover;
+    background: radial-gradient(ellipse closest-corner at center, rgba(0, 0, 0, 0) 10%, #080A0B 70%), url(/image/bg-image2.png) center/cover;
     margin: 0;
 }
 
@@ -229,7 +229,7 @@ div .logo {
 }
 
 .features {
-    background: radial-gradient(circle farthest-corner at 20% 60%, rgba(0, 0, 0, 0) 10%, #080A0B 70%), url(/week1/day3/image/bg-feature.png) center/cover, no-repeat;
+    background: radial-gradient(circle farthest-corner at 20% 60%, rgba(0, 0, 0, 0) 10%, #080A0B 70%), url(/image/bg-feature.png) center/cover, no-repeat;
     margin: 0;
 }
 
@@ -295,7 +295,7 @@ div .logo {
 }
 
 .system-req {
-    background: radial-gradient(circle farthest-corner at 65% 50%, rgba(0, 0, 0, 0) 10%, #080A0B 55%), url(/week1/day3/image/bg-sysreq.png)center/cover;
+    background: radial-gradient(circle farthest-corner at 65% 50%, rgba(0, 0, 0, 0) 10%, #080A0B 55%), url(/image/bg-sysreq.png)center/cover;
     margin: 0;
     position: relative;
 }
@@ -395,7 +395,7 @@ div .logo {
 }
 
 .press-quotes {
-    background: radial-gradient(ellipse farthest-corner at 35% 60%, rgba(0, 0, 0, 0) 30%, #080A0B 55%), url(/week1/day3/image/bg-pressquotes.png)center/cover;
+    background: radial-gradient(ellipse farthest-corner at 35% 60%, rgba(0, 0, 0, 0) 30%, #080A0B 55%), url(/image/bg-pressquotes.png)center/cover;
 }
 
 .main-quotes {
@@ -523,7 +523,7 @@ div .logo {
 }
 
 .bg-newsletter {
-    background: radial-gradient(ellipse farthest-corner at 50% 50%, rgba(0, 0, 0, 0) 30%, #080A0B 72%), url(/week1/day3/image/bg-newsletter.png)center/cover;
+    background: radial-gradient(ellipse farthest-corner at 50% 50%, rgba(0, 0, 0, 0) 30%, #080A0B 72%), url(/image/bg-newsletter.png)center/cover;
     width: 445.466px;
     height: 694.408px;
     flex-shrink: 0;
