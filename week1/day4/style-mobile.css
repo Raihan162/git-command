@@ -157,6 +157,8 @@
         color: #2F3D4C;
         font-size: 16px;
         line-height: 12px;
+        width: 100%;
+        max-width: 436px;
     }
 
     .title-email,
