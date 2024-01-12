@@ -1,0 +1,216 @@
+:root {
+    margin: 0;
+    /* height: 100%; */
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg);
+    transition: all .3s;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-calculator {
+    padding: 20px;
+    max-width: 80%;
+}
+
+.title-theme {
+    /* background-color: #D03F31; */
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.title-theme h1 {
+    color: var(--color-font-display);
+    margin: 0;
+}
+
+.switch-theme {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.switch-theme p {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-font-display);
+    margin: 0;
+}
+
+.title-color {
+    margin-left: 30px;
+}
+
+.color-picker {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+    align-items: center;
+    background-color: var(--color-bg-keypad);
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
+.color-picker input[type='radio'] {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 0;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.color-picker input[type='radio']#theme1 {
+    --radio-color: #D03F31;
+}
+
+.color-picker input[type='radio']#theme2 {
+    --radio-color: #C85401;
+}
+
+.color-picker input[type='radio']#theme3 {
+    --radio-color: #00DECF;
+}
+
+.color-picker input[type='radio']:checked {
+    appearance: none;
+    background-color: var(--radio-color, currentColor);
+}
+
+:root:has(#theme1:checked) {
+    --color-bg: #3B4665;
+    --color-bg-display: #181F32;
+    --color-bg-keypad: #181F32;
+    --color-font-keypad: #41464D;
+    --color-font-display: #FFFFFF;
+    --color-keypad: #E9E3DB;
+    --color-delreset: #647299;
+    --color-calculatetoggle: #D03F31;
+}
+
+:root:has(#theme2:checked) {
+    --color-bg: #E6E6E6;
+    --color-bg-display: #EEEEEE;
+    --color-bg-keypad: #D3CDCD;
+    --color-font-keypad: #373631;
+    --color-font-display: #373631;
+    --color-keypad: #E5E4E0;
+    --color-delreset: #388187;
+    --color-calculatetoggle: #C85401;
+}
+
+:root:has(#theme3:checked) {
+    --color-bg: #17062A;
+    --color-bg-display: #1E0836;
+    --color-bg-keypad: #1E0836;
+    --color-font-keypad: #F7E03C;
+    --color-font-display: #F7E03C;
+    --color-keypad: #331B4D;
+    --color-delreset: #56077C;
+    --color-calculatetoggle: #00DECF;
+}
+
+.themes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* START DISPLAY NUMBER */
+.display-number {
+    background-color: var(--color-bg-display);
+    width: 100%;
+    height: 100px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.display-number #box {
+    background-color: transparent;
+    color: var(--color-font-display);
+    width: auto;
+    padding: 0 20px;
+    height: 100%;
+    border-radius: 12px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* END DISPLAY NUMBER */
+
+/* START NUMBER OPERATIONS */
+.numbers-operation {
+    background-color: var(--color-bg-keypad);
+    /* width: auto; */
+    height: 100%;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+/* @media only screen and (max-width: 480px) {
+    .numbers-operation table {
+        width: auto;
+        ;
+    }
+} */
+
+.numbers-operation table {
+    width: 500px;
+    overflow: auto;
+}
+
+tr td {
+    text-align: center;
+    padding: 3px;
+    /* width: auto; */
+    min-width: 60px;
+}
+
+td button {
+    width: 100%;
+    height: 60px;
+    padding: 4px;
+    background-color: var(--color-keypad);
+    color: var(--color-font-keypad);
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+    cursor: pointer;
+}
+
+td #backspace_btn,
+td #reset {
+    background-color: var(--color-delreset);
+    color: white
+}
+
+td #reset,
+td #equal_sign {
+    width: 100%;
+}
+
+td #equal_sign {
+    background-color: var(--color-calculatetoggle);
+    color: white
+}
+
+/* END NUMBER OPERATIONS */

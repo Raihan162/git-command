@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator 3 Theme</title>
+        <link rel="stylesheet" href="/week1/day5/styles/style.css">
+        <script src="/week1/day5/scripts/scripts.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div class="container-calculator">
+            <div class="title-theme">
+                <h1>
+                    calc
+                </h1>
+                <div class="switch-theme">
+                    <p>
+                        THEME
+                    </p>
+                    <div class="title-color">
+                        <div class="themes">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                        </div>
+                        <div class="color-picker">
+                            <input type="radio" name="theme" id="theme1" checked>
+                            <input type="radio" name="theme" id="theme2">
+                            <input type="radio" name="theme" id="theme3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display-number">
+                <!-- <p id="box" class="box"></p> -->
+                <input type="text" id="box" disabled>
+            </div>
+
+            <div class="numbers-operation">
+                <table class="buttons">
+                    <tr>
+                        <td><button onclick="display('7')">7</button></td>
+                        <td><button onclick="display('8')">8</button></td>
+                        <td><button onclick="display('9')">9</button></td>
+                        <td><button class="operator" onclick="del()" id="backspace_btn">DEL</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="display('4')">4</button></td>
+                        <td><button onclick="display('5')">5</button></td>
+                        <td><button onclick="display('6')">6</button></td>
+                        <td><button onclick="display('+')" class="operator">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="display('1')">1</button></td>
+                        <td><button onclick="display('2')">2</button></td>
+                        <td><button onclick="display('3')">3</button></td>
+                        <td><button onclick="display('-')" class="operator">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="display('.')">.</button></td>
+                        <td><button onclick="display('0')">0</button></td>
+                        <td><button onclick="display('/')" class="operator">/</button></td>
+                        <td><button onclick="display('*')" class="operator">×</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button onclick="reset()" class="operator" id="reset">RESET</button></td>
+                        <td colspan="2"><button onclick="calculate()" class="operator" id="equal_sign">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+
+</html>
