@@ -20,7 +20,6 @@ body {
 }
 
 .title-theme {
-    /* background-color: #D03F31; */
     display: flex;
     flex-direction: row;
     align-items: end;
@@ -67,6 +66,7 @@ body {
     border: 0;
     border-radius: 50%;
     margin: 0;
+    cursor: pointer;
 }
 
 .color-picker input[type='radio']#theme1 {
@@ -127,18 +127,17 @@ body {
 }
 
 /* START DISPLAY NUMBER */
-.display-number {
-    background-color: var(--color-bg-display);
-    width: 100%;
-    height: 100px;
-    border-radius: 12px;
-    margin: 40px 0;
-}
+/* .display-number { */
+/* width: 100%; */
+/* border-radius: 12px; */
+/* } */
 
-.display-number #box {
-    background-color: transparent;
+/* #box {
+    margin: 40px 0;
+    background-color: var(--color-bg-display);
     color: var(--color-font-display);
-    width: auto;
+    max-width: min-content;
+    height: 100px;
     padding: 0 20px;
     height: 100%;
     border-radius: 12px;
@@ -147,6 +146,19 @@ body {
     align-items: center;
     justify-content: end;
     flex-direction: row;
+    font-size: 40px;
+    font-weight: 700;
+    overflow: auto;
+} */
+
+#box {
+    margin: 40px 0;
+    background-color: var(--color-bg-display);
+    color: var(--color-font-display);
+    width: 100%;
+    height: 100px;
+    border-radius: 12px;
+    text-align: right;
     font-size: 40px;
     font-weight: 700;
 }
@@ -163,13 +175,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
-/* @media only screen and (max-width: 480px) {
-    .numbers-operation table {
-        width: auto;
-        ;
-    }
-} */
 
 .numbers-operation table {
     width: 500px;
