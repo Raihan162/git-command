@@ -1,0 +1,141 @@
+@import '../../../../styles/base.scss';
+
+.showCounter {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 40px;
+    @include apply-at-xs-size{
+        gap: 10px;
+    }
+    width: min-content;
+
+    .days {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: min-content;
+
+        .daysTime {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            padding: 5px;
+            width: 90px;
+            height: 110px;
+            background-color: $neutral-dark-desaturated-blue;
+            color: $primary-soft-red;
+            font-size: $fontCounterWeb;
+
+            @include apply-at-xs-size {
+                font-size: $fontCounterMobile;
+                width: 45px;
+                height: 65px;
+            }
+        }
+
+        p {
+            color: $primary-grayish-blue;
+            height: fit-content;
+        }
+    }
+
+    .hours {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: min-content;
+
+        .hoursTime {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            padding: 5px;
+            width: 90px;
+            height: 110px;
+            background-color: $neutral-dark-desaturated-blue;
+            color: $primary-soft-red;
+            font-size: $fontCounterWeb;
+
+            @include apply-at-xs-size {
+                font-size: $fontCounterMobile;
+                width: 45px;
+                height: 65px;
+            }
+        }
+
+        p {
+            color: $primary-grayish-blue;
+            height: fit-content;
+        }
+    }
+
+    .minutes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: min-content;
+
+        .minutesTime {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            padding: 5px;
+            width: 90px;
+            height: 110px;
+
+            background-color: $neutral-dark-desaturated-blue;
+            color: $primary-soft-red;
+            font-size: $fontCounterWeb;
+
+            @include apply-at-xs-size {
+                font-size: $fontCounterMobile;
+                width: 45px;
+                height: 65px;
+            }
+        }
+
+        p {
+            color: $primary-grayish-blue;
+            height: fit-content;
+        }
+    }
+
+    .seconds {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: min-content;
+
+        .secondsTime {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            padding: 5px;
+            width: 90px;
+            height: 110px;
+            background-color: $neutral-dark-desaturated-blue;
+            color: $primary-soft-red;
+            font-size: $fontCounterWeb;
+
+            @include apply-at-xs-size {
+                font-size: $fontCounterMobile;
+                width: 45px;
+                height: 65px;
+            }
+        }
+
+        p {
+            color: $primary-grayish-blue;
+            height: fit-content;
+        }
+    }
+}
