@@ -1,0 +1,8 @@
+@mixin directionToX {
+    display: flex;
+}
+
+@mixin directionToY {
+    display: flex;
+    flex-direction: column;
+}
