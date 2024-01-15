@@ -5,36 +5,77 @@
     align-items: center;
     height: fit-content;
     gap: 40px;
-    @include apply-at-xs-size{
+
+    @include apply-at-xs-size {
         gap: 10px;
     }
+
     width: min-content;
 
-    .days {
+    .containerTime {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
         width: min-content;
 
-        .daysTime {
+        .card {
+            position: relative;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            border-radius: 5px;
-            padding: 5px;
-            width: 90px;
-            height: 110px;
-            background-color: $neutral-dark-desaturated-blue;
-            color: $primary-soft-red;
-            font-size: $fontCounterWeb;
+            filter: drop-shadow(0 5px rgb(34, 34, 34) );
 
-            @include apply-at-xs-size {
-                font-size: $fontCounterMobile;
-                width: 45px;
-                height: 65px;
+            .top {
+                background-color: $neutral-darker-blue;
+                width: 90px;
+                height: 55px;
+                border-radius: 5px;
+                padding: 5px;
+
+                @include apply-at-xs-size {
+                    font-size: $fontCounterMobile;
+                    width: 45px;
+                    height: 30px;
+                }
+            }
+
+            .bottom {
+                background-color: $neutral-dark-desaturated-blue;
+                width: 90px;
+                height: 55px;
+                border-radius: 5px;
+                padding: 5px;
+
+                @include apply-at-xs-size {
+                    font-size: $fontCounterMobile;
+                    width: 45px;
+                    height: 30px;
+                }
+            }
+
+            .time {
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // border-radius: 5px;
+                // padding: 5px;
+                // width: 90px;
+                // height: 110px;
+                // background-color: $neutral-dark-desaturated-blue;
+                position: absolute;
+                top: 30%;
+                // left: 30%;
+                color: $primary-soft-red;
+                font-size: $fontCounterWeb;
+
+                @include apply-at-xs-size {
+                    font-size: $fontCounterMobile;
+                    top: 25%;
+                }
             }
         }
+
 
         p {
             color: $primary-grayish-blue;
@@ -42,100 +83,4 @@
         }
     }
 
-    .hours {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        width: min-content;
-
-        .hoursTime {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 5px;
-            padding: 5px;
-            width: 90px;
-            height: 110px;
-            background-color: $neutral-dark-desaturated-blue;
-            color: $primary-soft-red;
-            font-size: $fontCounterWeb;
-
-            @include apply-at-xs-size {
-                font-size: $fontCounterMobile;
-                width: 45px;
-                height: 65px;
-            }
-        }
-
-        p {
-            color: $primary-grayish-blue;
-            height: fit-content;
-        }
-    }
-
-    .minutes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        width: min-content;
-
-        .minutesTime {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 5px;
-            padding: 5px;
-            width: 90px;
-            height: 110px;
-
-            background-color: $neutral-dark-desaturated-blue;
-            color: $primary-soft-red;
-            font-size: $fontCounterWeb;
-
-            @include apply-at-xs-size {
-                font-size: $fontCounterMobile;
-                width: 45px;
-                height: 65px;
-            }
-        }
-
-        p {
-            color: $primary-grayish-blue;
-            height: fit-content;
-        }
-    }
-
-    .seconds {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        width: min-content;
-
-        .secondsTime {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 5px;
-            padding: 5px;
-            width: 90px;
-            height: 110px;
-            background-color: $neutral-dark-desaturated-blue;
-            color: $primary-soft-red;
-            font-size: $fontCounterWeb;
-
-            @include apply-at-xs-size {
-                font-size: $fontCounterMobile;
-                width: 45px;
-                height: 65px;
-            }
-        }
-
-        p {
-            color: $primary-grayish-blue;
-            height: fit-content;
-        }
-    }
 }
