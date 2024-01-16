@@ -1,0 +1,16 @@
+// Dark Element
+// $Dark-Mode-Elements:hsl(209, 23%, 22%);
+// $Dark-Mode-Bg: hsl(207, 26%, 17%);
+$Dark-Mode-Elements: hsl(209, 23%, 22%);
+$Dark-Mode-Bg: hsl(207, 26%, 17%);
+
+// Light Element
+$Light-Mode-Text: hsl(200, 15%, 8%);
+$Light-Mode-Input: hsl(0, 0%, 52%);
+$Light-Mode-Bg: hsl(0, 0%, 98%);
+// $text: var(--palette-input);
+// $input: var(--palette-text);
+// $bg: var(--palette-bg);
+
+$Dark-Mode-Text_Light-Mode-Elements: hsl(0, 0%, 100%);
+$Dark-Mode-Text_Light-Mode-Elements: var(--palette-element);

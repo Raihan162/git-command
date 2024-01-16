@@ -1,0 +1,68 @@
+@import '../../../../styles/base.scss';
+
+.card_container {
+    width: 328px;
+    height: 416px;
+    // background-color: $Light-Mode-Bg;
+    cursor: pointer;
+
+    @include apply-at-md-size {
+        width: 265px;
+        height: 335px;
+        gap: 27px;
+    }
+
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    margin: 50px 0;
+    border-radius: 5px;
+
+    .flag {
+        height: 198px;
+        width: 100%;
+
+        @include apply-at-lg-size {
+            height: 159px;
+        }
+
+        border-radius: 5px 5px 0 0;
+        margin-bottom: 32px
+    }
+
+    .info {
+        @include directionToY;
+        align-items: start;
+        padding: 0 30px;
+
+        @include apply-at-lg-size {
+            padding: 0 24px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: $fontBold;
+            margin-bottom: 23px;
+
+            @include apply-at-lg-size {
+                font-size: 18px;
+                font-weight: $fontBold;
+                margin-bottom: 19px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: $fontNormal;
+
+            @include apply-at-lg-size {
+                font-size: 14px;
+                font-weight: $fontBold;
+            }
+
+            span {
+                // color: $Light-Mode-Text;
+                font-weight: $fontLight;
+            }
+
+        }
+    }
+}

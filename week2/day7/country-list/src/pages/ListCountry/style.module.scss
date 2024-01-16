@@ -1,0 +1,111 @@
+@import '../../styles/base.scss';
+
+* {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    font-family: $fontFamily;
+}
+
+.navbar {
+    @include directionToX;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    // background-color: $Light-Mode-Bg;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 99px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    button {
+        font-size: 15px;
+        font-weight: 600;
+        border: 0;
+        background-color: transparent;
+        @include directionToX;
+        align-items: center;
+        gap: 11px;
+        cursor: pointer
+    }
+}
+
+.searchFilter {
+    @include directionToX;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+
+    .search {
+        @include directionToX;
+        align-items: center;
+        // background-color: $Light-Mode-Bg;
+        // color: $Light-Mode-Input;
+        padding: 17px 39px;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 100%;
+        max-width: 480px;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        input {
+            border: 0;
+            padding: 10px 10px;
+            // color: $Light-Mode-Input;
+        }
+    }
+
+    .filter {
+        @include directionToX;
+        align-items: center;
+        justify-content: space-between;
+        height: 56px;
+        padding: 16px 12px 16px 24px;
+        width: 200px;
+        border: 0;
+        // background-color: $Dark-Mode-Text_Light-Mode-Elements;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+        margin-top: 51px;
+        cursor: pointer;
+
+        @include apply-at-md-size {
+            margin-top: 0;
+        }
+    }
+}
+
+.list {
+    display: grid;
+    margin: auto;
+    // padding: 0 68px;
+    gap: 50px;
+    width: fit-content;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+    justify-items: center;
+
+    @include apply-at-md-size {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include apply-at-xl-size {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 73px;
+        row-gap: 76px;
+        // padding: 0 80px;
+    }
+}
