@@ -1,0 +1,158 @@
+@import '../../styles/base.scss';
+
+* {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    font-family: $fontFamily;
+
+}
+
+.navbar {
+    @include directionToX;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    // background-color: $Light-Mode-Bg;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 99px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    button {
+        font-size: 15px;
+        font-weight: 600;
+        border: 0;
+        background-color: transparent;
+        @include directionToX;
+        align-items: center;
+        gap: 11px;
+        cursor: pointer;
+    }
+}
+
+.back {
+    @include directionToX;
+    align-items: center;
+    gap: 7px;
+    width: 136px;
+    height: 40px;
+    font-size: $fontSize-info-mobile;
+    justify-content: center;
+    border: 0;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    // background-color: $Light-Mode-Bg;
+    margin-left: 32px;
+    margin-top: 30px;
+    cursor: pointer;
+
+    @include apply-at-xl-size {
+        margin-left: 80px;
+        margin-top: 80px;
+    }
+}
+
+.flagInfo {
+    @include directionToY;
+    align-items: center;
+    margin: 70px auto;
+    width: 401px;
+
+    @include apply-at-xl-size {
+        @include directionToX;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 150px;
+    }
+}
+
+.flag {
+    width: 401px;
+    height: 268px;
+    margin-bottom: 70px;
+
+    @include apply-at-xl-size {
+        @include directionToX;
+        width: 555px;
+        height: 400px;
+        margin-bottom: 0;
+    }
+}
+
+.info {
+    @include directionToY;
+    width: 100%;
+    gap: 60px;
+
+    h3 {
+        font-size: $fontSize-country-mobile;
+        font-weight: $fontBold;
+    }
+
+    @include apply-at-xl-size {
+        width: 571px;
+        height: 320px;
+        gap: 0;
+        justify-content: space-between
+    }
+}
+
+.infoDetail {
+    @include directionToY;
+    gap: 60px;
+    font-size: $fontSize-info-mobile;
+    font-weight: $fontNormal;
+
+    .topInfo {
+        gap: 13px;
+    }
+
+
+    @include apply-at-xl-size {
+        @include directionToX;
+        justify-content: space-between
+    }
+}
+
+.border {
+    @include directionToY;
+    gap: 13px;
+
+    p {
+        @include apply-at-xl-size {
+            margin-right: 18px;
+        }
+    }
+
+    .countryBorder {
+        @include directionToX;
+        align-items: center;
+        width: fit-content;
+        gap: 13px;
+        height: 16px;
+
+        p {
+            // background-color: $Light-Mode-Bg;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+            min-width: auto;
+        }
+
+        @include apply-at-xl-size {
+            gap: 10px
+        }
+    }
+
+    @include apply-at-xl-size {
+        @include directionToX;
+        align-items: center;
+    }
+}
