@@ -1,0 +1,40 @@
+@import '../../styles/base.scss';
+
+* {
+    // width: 100%;
+    margin: 0;
+    // height: 100%;
+}
+
+.container {
+    background-color: $color-primary-background;
+    // width: 100%;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px 25px;
+}
+
+.content {
+    @include apply-at-lg-size {
+        margin: 0 66px;
+        @include directionToY;
+        align-items: center;
+    }
+
+    margin-top: 18px
+}
+
+.listMenu {
+    @include directionToX;
+    align-items: center;
+    overflow-y: hidden;
+    gap: 20px;
+
+    @include apply-at-lg-size {
+        gap: 300px;
+    }
+}
+
+.listMenu::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,41 @@
+@import'../../../../styles/base.scss';
+
+.container {
+    height: max-content;
+    margin: 30px 0;
+    @include directionToY;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        width: 149.008px;
+        height: 125.298px;
+        flex-shrink: 0;
+        object-fit: cover;
+        position: absolute;
+        margin-top: -20px;
+        // top: 0;
+        border-radius: 50%;
+        @include cardShadow
+    }
+
+    .box {
+        width: 221px;
+        height: 172.285px;
+        flex-shrink: 0;
+        background-color: $color-primary-background;
+        border: 3px solid $color-secondary-background;
+        @include directionToY;
+        align-items: center;
+        justify-content: end;
+        border-radius: 5px;
+        margin-bottom: 90px;
+
+        p {
+            font-family: $fontRoboto;
+            font-size: $fontSize15;
+            font-weight: $fontMedium;
+            color: $color-tertiary-text;
+        }
+    }
+}

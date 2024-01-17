@@ -1,0 +1,173 @@
+@import '../../styles/base.scss';
+
+* {
+    margin: 0;
+}
+
+.container {
+    margin: 20px 0;
+    width: max-content;
+    position: relative;
+}
+
+.cardMenuContent {
+    width: max-content;
+    height: max-content;
+
+    @include apply-at-lg-size {
+        width: 624px;
+        height: 518px;
+    }
+
+    border: 6px solid $color-secondary-background;
+    border-radius: 20px;
+    @include cardShadow;
+    padding: 16px 12px;
+    // position: relative;
+
+    h3 {
+        font-family: $fontArchivo;
+        font-size: $fontSize20;
+        font-weight: $fontBold;
+        color: $color-primary-text;
+        height: 39px;
+    }
+
+    .contentMenu {
+        @include directionToYReverse;
+
+        @include apply-at-lg-size {
+            @include directionToX;
+        }
+
+        .contentLeft {
+            width: 400px;
+
+            @include apply-at-lg-size {
+                width: 380px;
+            }
+
+            p {
+                font-family: $fontRoboto;
+                font-size: $fontSize13;
+                font-weight: $fontRegular;
+                color: $color-primary-text;
+                width: 371px;
+                height: 144px;
+                flex-shrink: 0;
+                overflow-x: hidden;
+            }
+
+            p::-webkit-scrollbar {
+                display: none;
+            }
+
+            h4 {
+                font-family: $fontArchivo;
+                font-size: $fontSize19;
+                font-weight: $fontBold;
+                color: $color-secondary-text;
+                margin-top: 120px;
+
+                @include apply-at-lg-size {
+                    margin-top: 42px;
+                }
+            }
+        }
+
+    }
+
+}
+
+.ingredients {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+
+    .ingredient {
+        @include directionToX;
+        align-items: center;
+        gap: 6px;
+        width: max-content;
+
+        .cardImage {
+            width: 50px;
+            height: 40px;
+            border-radius: 10px;
+            @include cardShadow;
+            @include directionToX;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 26px;
+                height: 26px;
+            }
+
+        }
+
+        .desc {
+            p {
+                height: max-content;
+                width: min-content;
+            }
+
+            .name {
+                font-family: $fontRoboto;
+                font-size: $fontSize11;
+                font-weight: $fontMedium;
+                color: $color-primary-text;
+                width: max-content;
+            }
+
+            .dose {
+                font-family: $fontRoboto;
+                font-size: $fontSize8;
+                font-weight: $fontMedium;
+                color: $color-secondary-text;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+.buttons {
+    margin-top: 20px;
+    column-gap: 60px;
+    @include directionToX;
+    justify-content: start;
+
+    button {
+        border: 2px solid $color-button;
+        background-color: $color-primary-background;
+        color: $color-button;
+        width: 125px;
+        height: 30px;
+        font-size: $fontSize8;
+        font-family: $fontRoboto;
+        font-weight: $fontMedium;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: $color-button;
+        color: $color-secondary-background;
+        cursor: pointer;
+    }
+}
+
+.thumbImage {
+    width: 400px;
+    height: 400px;
+    margin: 20px 0;
+
+    @include apply-at-lg-size {
+        position: absolute;
+        right: -30%;
+        top: 7%;
+    }
+
+}
