@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 import Title from '../../components/Title'
+import CardMoreRecipies from '../../components/CardMoreRecipies'
+import CardFavorite from './components/Card'
+
+import { callAPI } from '../../domain/api'
+import { callAPIJSON } from '../../domain/api_json'
 
 import classes from './style.module.scss'
-import CardMoreRecipies from '../../components/CardMoreRecipies'
-import { callAPI } from '../../domain/api'
-import { useLocation, useNavigate } from 'react-router-dom'
-import { callAPIJSON } from '../../domain/api_json'
-import CardFavorite from './components/Card'
 
 export default function Favorite() {
 
@@ -73,7 +74,7 @@ export default function Favorite() {
           {
             category?.map((category, index) => {
               return (
-                <button onClick={() => setSelectedCategory(category.strCategory)} key={index}>
+                <button onClick={() => { setSelectedCategory(category.strCategory); navigate('/') }} key={index}>
                   {category.strCategory}
                 </button>
               )

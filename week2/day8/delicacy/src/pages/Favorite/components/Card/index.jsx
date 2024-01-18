@@ -7,7 +7,6 @@ import classes from './style.module.scss'
 
 export default function CardFavorite({ data , func}) {
 
-    console.log(data)
     return (
         <div value={data?.id} className={classes.container}>
             <img src={data?.image} alt="" />

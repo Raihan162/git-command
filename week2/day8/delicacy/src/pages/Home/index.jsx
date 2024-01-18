@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import { callAPI } from '../../domain/api';
+import { callAPIJSON } from '../../domain/api_json';
 
 import Title from '../../components/Title'
 import CardMenu from '../../components/CardMenu'
 import MoreRecipies from '../../components/MoreRecipies'
 
 import classes from './style.module.scss'
-import { callAPIJSON } from '../../domain/api_json';
 
 export default function Home() {
 

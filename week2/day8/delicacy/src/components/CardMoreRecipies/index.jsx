@@ -2,15 +2,14 @@ import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import Plate from '../../assets/images/Plate.png'
+import ButtonRemoveFav from '../ButtonRemoveFav'
 
 import classes from './style.module.scss'
-import ButtonRemoveFav from '../ButtonRemoveFav'
 
 export default function CardMoreRecipies() {
 
     const location = useLocation()
     const navigate = useNavigate()
-    console.log(location)
 
     return (
         <div className={classes.container}>

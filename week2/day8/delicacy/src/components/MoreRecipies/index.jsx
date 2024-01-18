@@ -1,7 +1,8 @@
 import React from 'react'
 
-import classes from './style.module.scss'
 import CardMoreRecipies from '../CardMoreRecipies'
+
+import classes from './style.module.scss'
 
 export default function MoreRecipies() {
     return (

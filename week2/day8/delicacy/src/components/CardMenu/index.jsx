@@ -3,9 +3,10 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 import OliveOil from '../../assets/images/olive-oil.svg'
 import Ingredient from '../Ingredient'
+import ButtonFav from '../ButtonFav'
+import ButtonRemoveFav from '../ButtonRemoveFav'
 
 import classes from './style.module.scss'
-import ButtonFav from '../ButtonFav'
 
 export default function CardMenu({ onClick, checkPathname, meals, addToFavorite }) {
 
