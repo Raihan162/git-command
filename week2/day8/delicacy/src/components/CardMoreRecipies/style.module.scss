@@ -1,0 +1,45 @@
+@import '../../styles/base.scss';
+
+* {
+    margin: 0;
+}
+
+.container {
+    width: max-content;
+    height: 166.177px;
+    flex-shrink: 0;
+    @include directionToX;
+    align-items: end;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        margin-bottom: 4rem;
+        @include cardShadowPlate;
+        border-radius: 50%;
+    }
+
+    .box {
+        width: 142.437px;
+        height: 130.567px;
+        flex-shrink: 0;
+        background-color: $color-primary-background;
+        border: 3px solid $color-secondary-background;
+        border-radius: 5px;
+        @include directionToX;
+        align-items: end;
+        justify-content: center;
+
+        p {
+            font-family: $fontRoboto;
+            font-size: $fontSize15;
+            font-weight: $fontMedium;
+            color: $color-tertiary-text;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+}

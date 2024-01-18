@@ -1,0 +1,74 @@
+@import '../../styles/base.scss';
+
+* {
+    // width: 100%;
+    margin: 0;
+    // height: 100%;
+}
+
+.container {
+    background-color: $color-primary-background;
+    // width: 100%;
+    min-height: 100vh;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px 25px;
+}
+
+.content {
+    @include apply-at-lg-size {
+        margin: 0 66px;
+    }
+
+    margin-top: 18px
+}
+
+.tabs {
+    @include directionToX;
+    gap: 14px;
+    max-width: fit-content;
+    overflow-y: auto;
+
+    button {
+        font-family: $fontRoboto;
+        font-size: $fontSize20;
+        font-weight: $fontMedium;
+        color: $color-secondary-text;
+        padding: 5px 10px;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    button:focus {
+        transition: all .3s;
+        font-family: $fontRoboto;
+        font-size: $fontSize20;
+        font-weight: $fontMedium;
+        color: $color-primary-text;
+        padding: 5px 10px;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+}
+
+.tabs::-webkit-scrollbar {
+    display: none;
+
+}
+
+.favorites {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include apply-at-md-size {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include apply-at-lg-size {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

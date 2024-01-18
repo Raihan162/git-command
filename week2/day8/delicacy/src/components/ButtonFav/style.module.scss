@@ -1,0 +1,24 @@
+@import '../../styles/base.scss';
+
+* {
+    margin: 0;
+}
+
+button {
+    border: 2px solid $color-button;
+    background-color: $color-primary-background;
+    color: $color-button;
+    width: 125px;
+    height: 30px;
+    font-size: $fontSize8;
+    font-family: $fontRoboto;
+    font-weight: $fontMedium;
+    text-align: center;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: $color-button;
+    color: $color-secondary-background;
+    cursor: pointer;
+}

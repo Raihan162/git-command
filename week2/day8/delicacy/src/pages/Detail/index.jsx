@@ -1,0 +1,38 @@
+import React, { useEffect, useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
+
+import Title from '../../components/Title'
+import CardMenu from '../../components/CardMenu'
+import MoreRecipies from '../../components/MoreRecipies'
+
+import classes from './style.module.scss'
+
+export default function Detail() {
+
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  const [checkPathname, setCheckPathname] = useState(false)
+
+  const backToHome = () => {
+    navigate('/')
+  }
+
+  useEffect(() => {
+    if (location.pathname === '/detail') {
+      setCheckPathname(true)
+    }
+  }, [])
+
+  return (
+    <div className={classes.container}>
+      <Title onClick={() => backToHome()} />
+      <div className={classes.content}>
+
+        <CardMenu checkPathname={checkPathname} />
+
+        <MoreRecipies />
+      </div>
+    </div>
+  )
+}

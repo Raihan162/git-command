@@ -1,0 +1,50 @@
+@import '../../styles/base.scss';
+
+* {
+    margin: 0;
+}
+
+.ingredient {
+    @include directionToX;
+    align-items: center;
+    gap: 6px;
+    width: max-content;
+
+    .cardImage {
+        width: 50px;
+        height: 40px;
+        border-radius: 10px;
+        @include cardShadow;
+        @include directionToX;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 26px;
+            height: 26px;
+        }
+
+    }
+
+    .desc {
+        p {
+            height: max-content;
+            width: min-content;
+        }
+
+        .name {
+            font-family: $fontRoboto;
+            font-size: $fontSize11;
+            font-weight: $fontMedium;
+            color: $color-primary-text;
+            width: max-content;
+        }
+
+        .dose {
+            font-family: $fontRoboto;
+            font-size: $fontSize8;
+            font-weight: $fontMedium;
+            color: $color-secondary-text;
+        }
+    }
+}

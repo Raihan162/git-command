@@ -1,0 +1,18 @@
+@import '../../styles/base.scss';
+
+* {
+    margin: 0;
+}
+
+.container {
+    width: max-content;
+
+    h1 {
+        font-family: $fontArchivo;
+        font-size: $fontSize44;
+        color: $color-primary-text;
+        width: 172px;
+        height: 57px;
+        cursor: pointer;
+    }
+}

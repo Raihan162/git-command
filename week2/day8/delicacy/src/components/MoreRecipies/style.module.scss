@@ -1,0 +1,31 @@
+@import '../../styles/base.scss';
+
+* {
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+}
+
+.title {
+    h3 {
+        font-family: $fontArchivo;
+        font-size: $fontSize24;
+        font-weight: $fontBold;
+        color: $color-primary-text;
+    }
+}
+
+.listRecipies {
+    // margin: auto;
+    margin-top: 10px;
+    height: max-content;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    overflow-y: hidden;
+    gap: 10px;
+    max-width: 100%;
+    cursor:pointer;
+}
