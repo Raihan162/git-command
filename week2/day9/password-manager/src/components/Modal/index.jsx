@@ -16,7 +16,7 @@ export default function ModalDelete({ data, func }) {
           </h3>
         </div>
         <div className={classes.buttons}>
-          <button onClick={() => func.deleteUser()} className={classes.yes}>
+          <button onClick={() => { func.deleteUser(data.selectedToDelete); data.setShowModalDelete(false) }} className={classes.yes}>
             Yes
           </button>
           <button onClick={() => data.setShowModalDelete(false)} className={classes.cancel}>

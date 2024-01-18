@@ -1,1 +1,43 @@
 @import '../../styles/base.scss';
+
+.container {
+    background-color: #fcfcfc;
+    padding: 20px;
+}
+
+.back {
+    @include directionToX;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    background-color: #0066ff;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    justify-content: center;
+}
+
+.detailUser {
+    margin-top: 30px;
+    margin-left: 30px;
+
+    table {
+        border: 2px solid rgb(176, 176, 176);
+        border-radius: 5px;
+        border-collapse: collapse;
+        width: 60%;
+
+        tr{
+            height: 30px;
+        }
+
+        tr>th {
+            border-right: 2px solid rgb(176, 176, 176);
+            border-collapse: collapse;
+        }
+
+        tr>td{
+            padding: 5px 20px;
+        }
+    }
+}
