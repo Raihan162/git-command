@@ -1,0 +1,18 @@
+{
+  "password": [
+    {
+      "id": 1,
+      "provider": "phincon.com",
+      "email": "mail@phincon.com",
+      "password": "Bethebest123",
+      "category": "work"
+    },
+    {
+      "id": 2,
+      "provider": "effist.com",
+      "email": "mail@effist.com",
+      "password": "Bethebest123",
+      "category": "work"
+    }
+  ]
+}

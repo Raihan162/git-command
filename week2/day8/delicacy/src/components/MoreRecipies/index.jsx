@@ -4,7 +4,7 @@ import CardMoreRecipies from '../CardMoreRecipies'
 
 import classes from './style.module.scss'
 
-export default function MoreRecipies() {
+export default function MoreRecipies({ data }) {
     return (
         <div className={classes.container}>
             <div className={classes.title}>
@@ -13,12 +13,13 @@ export default function MoreRecipies() {
                 </h3>
             </div>
             <div className={classes.listRecipies}>
-                <CardMoreRecipies />
-                <CardMoreRecipies />
-                <CardMoreRecipies />
-                <CardMoreRecipies />
-                <CardMoreRecipies />
-                <CardMoreRecipies />
+                {
+                    data?.randomRec.map((value, index) => {
+                        return (
+                            <CardMoreRecipies key={index} data={value} />
+                        )
+                    })
+                }
             </div>
         </div>
     )

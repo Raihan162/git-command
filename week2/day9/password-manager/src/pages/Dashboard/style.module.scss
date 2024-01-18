@@ -1,0 +1,41 @@
+@import '../../styles/base.scss';
+
+* {
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.tableData {
+    border: 2px solid #bababa;
+    border-radius: 5px;
+    width: 100%;
+    margin: 20px 0;
+
+    thead {
+        color: $color-primary-text;
+    }
+
+    tbody {
+        color: $color-secondary-text;
+
+        tr {
+            td {
+                padding: 3px 5px;
+            }
+
+            .buttons {
+                text-align: center;
+
+                button {
+                    border: 0;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+}

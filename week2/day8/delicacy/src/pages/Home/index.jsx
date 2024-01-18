@@ -16,8 +16,9 @@ export default function Home() {
 
   const [category, setCategory] = useState([])
   const [selectedCategory, setSelectedCategory] = useState("Beef")
-
+  const [randomRec, setRandomRec] = useState([])
   const [meals, setMeals] = useState([])
+  const [dataFavorites, setDataFavorites] = useState([])
 
   let getData = async () => {
     try {
@@ -36,6 +37,7 @@ export default function Home() {
 
   useEffect(() => {
     getData()
+    randomRecipies()
   }, [])
 
   const getSelectedCategory = async () => {
@@ -82,6 +84,32 @@ export default function Home() {
     }
   }
 
+  let randomRecipies = async () => {
+    try {
+      let arrRecipies = []
+
+      for (let i = 0; i < 6; i++) {
+        let { meals } = await callAPI('/random.php', 'GET')
+        const { idMeal, strMeal, strMealThumb } = meals[0]
+        arrRecipies.push({ idMeal, strMeal, strMealThumb })
+      }
+      const finalResponse = await Promise.all(arrRecipies)
+      setRandomRec(finalResponse)
+    } catch (error) {
+
+    }
+  }
+
+  let deleteFavorite = async (data) => {
+    try {
+      const response = await callAPIJSON(`/favorite/${data.idMeal}`, 'DELETE')
+      alert(`Remove favorite success ${data.idMeal}`)
+    } catch (error) {
+
+      alert('Remove favorite failed')
+    }
+  }
+
   return (
     <div className={classes.container}>
       <Title />
@@ -105,13 +133,13 @@ export default function Home() {
           {
             meals?.map((data, index) => {
               return (
-                <CardMenu key={index} meals={data} onClick={() => toDetail(data)} addToFavorite={() => addToFavorite(data)} />
+                <CardMenu key={index} meals={data} onClick={() => toDetail(data)} addToFavorite={() => addToFavorite(data)} deleteFavorite={() => deleteFavorite(data)} />
               )
             })
           }
         </div>
 
-        <MoreRecipies />
+        <MoreRecipies data={{ randomRec }} />
       </div>
     </div>
   )
