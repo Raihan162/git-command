@@ -1,0 +1,22 @@
+@mixin directionToX {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin directionToY {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin directionToYReverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@mixin cardShadow {
+    box-shadow: 0px 2.158px 5.395px 0px rgba(0, 0, 0, 0.15);
+}
+
+@mixin cardShadowPlate {
+    box-shadow: 2.158px 3.237px 11.87px 0px rgba(0, 0, 0, 0.14);
+}

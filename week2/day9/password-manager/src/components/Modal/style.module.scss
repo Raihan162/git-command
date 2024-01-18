@@ -1,0 +1,73 @@
+@import '../../styles/base.scss';
+
+* {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000022;
+    @include directionToX;
+    justify-content: center;
+    align-items: center;
+
+    .modal {
+        background-color: white;
+        width: 40%;
+        height: 40%;
+        border-radius: 10px;
+        padding: 10px;
+        @include directionToY;
+        align-items: center;
+        justify-content: space-around;
+
+        .title {
+            text-align: center;
+            width: 100%;
+
+            .icon {
+                font-size: 100px;
+                color: rgb(252, 36, 36);
+            }
+
+        }
+
+    }
+
+    .buttons {
+        width: 70%;
+        @include directionToX;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            border: 0;
+            width: 40%;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .yes {
+            background-color: #E94043;
+            color: white;
+        }
+
+        .yes:hover {
+            background-color: #ea272b;
+        }
+
+        .cancel {
+            background-color: #F1F2F3;
+            color: #6B7280;
+        }
+
+        .cancel:hover {
+            background-color: #d3d4d5;
+        }
+    }
+}

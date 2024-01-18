@@ -1,0 +1,185 @@
+@import '../../styles/base.scss';
+
+* {
+    margin: 0;
+    font-family: $fontRoboto;
+}
+
+.container {
+    padding: 20px;
+    background-color: #fcfcfc;
+}
+
+.addData {
+    width: 100%;
+    @include directionToY;
+    gap: 10px;
+
+    @include apply-at-sm-size {
+        width: 50%;
+        @include directionToY;
+        gap: 10px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    button {
+        padding: 5px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #0066ff;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0158db;
+    }
+}
+
+.form {
+    @include directionToY;
+    gap: 10px;
+
+    .provider {
+        @include directionToY;
+        gap: 5px;
+
+        label {
+            font-size: 14px;
+            ;
+        }
+
+        input {
+            border-radius: 5px;
+            padding: 5px;
+        }
+    }
+
+    .email {
+        @include directionToY;
+        gap: 5px;
+
+        label {
+            font-size: 14px;
+            ;
+        }
+
+        input {
+            border-radius: 5px;
+            padding: 5px
+        }
+    }
+
+    .password {
+        @include directionToY;
+        gap: 5px;
+
+        label {
+            font-size: 14px;
+            ;
+        }
+
+        input {
+            border-radius: 5px;
+            padding: 5px
+        }
+    }
+
+    .category {
+        @include directionToY;
+        gap: 5px;
+
+        label {
+            font-size: 14px;
+            ;
+        }
+
+        select {
+            border-radius: 5px;
+            padding: 5px
+        }
+    }
+}
+
+.top {
+    @include directionToYReverse;
+
+    @include apply-at-sm-size {
+        @include directionToX;
+        justify-content: space-between;
+    }
+
+    img {
+        @include apply-at-sm-size {
+            width: 300px;
+            height: 300px;
+        }
+
+        object-fit: contain;
+    }
+}
+
+.cat {
+    width: 100%;
+
+    @include apply-at-sm-size {
+        width: 50%;
+    }
+
+    margin-top: 20px;
+    @include directionToX;
+
+    select {
+        width: 100%;
+        border-radius: 5px;
+        padding: 5px
+    }
+}
+
+.tableData {
+    border: 2px solid #bababa;
+    border-radius: 5px;
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+
+    thead {
+        color: $color-primary-text;
+        background-color: #d5d5d5;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    tbody {
+        color: $color-secondary-text;
+
+        tr {
+            height: 20px;
+
+            td {
+                padding: 3px 5px;
+                width: min-content;
+            }
+
+            .buttons {
+                text-align: center;
+
+                button {
+                    border: 0;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+
+
+            }
+        }
+
+        tr:nth-child(even) {
+            background-color: #e5e5e5;
+        }
+    }
+}

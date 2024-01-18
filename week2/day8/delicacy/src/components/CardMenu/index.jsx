@@ -7,11 +7,31 @@ import ButtonFav from '../ButtonFav'
 import ButtonRemoveFav from '../ButtonRemoveFav'
 
 import classes from './style.module.scss'
+import { useState } from 'react'
+import { callAPIJSON } from '../../domain/api_json'
 
-export default function CardMenu({ onClick, checkPathname, meals, addToFavorite }) {
+export default function CardMenu({ onClick, checkPathname, meals, addToFavorite, deleteFavorite }) {
 
     const navigate = useNavigate()
     const { state } = useLocation()
+
+    const [dataFavorites, setDataFavorites] = useState([])
+
+    const checkFavorites = dataFavorites.some((val) => val.id === meals?.idMeal)
+    
+    let getFavorites = async () => {
+        try {
+            const response = await callAPIJSON('/favorite', 'GET')
+            setDataFavorites(response)
+            
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    
+    useEffect(() => {
+        getFavorites()
+    }, [])
 
     return (
         <div className={classes.container}>
@@ -141,7 +161,12 @@ export default function CardMenu({ onClick, checkPathname, meals, addToFavorite 
                                         Detail
                                     </button>
                             }
-                            <ButtonFav addToFavorite={addToFavorite} checkPathname={checkPathname} />
+                            {
+                                checkFavorites ?
+                                    <ButtonRemoveFav func={deleteFavorite} />
+                                    :
+                                    <ButtonFav addToFavorite={addToFavorite} checkPathname={checkPathname} />
+                            }
                         </div>
                     </div>
                     <img className={classes.thumbImage} src={state?.data ? state?.data.strMealThumb : meals?.strMealThumb} alt="Meal Image" />
