@@ -1,0 +1,155 @@
+@import '../../styles/base.scss';
+
+.contentCard {
+    width: 100%;
+
+    h2 {
+        color: $primary-marin-blue;
+        margin-top: 20px;
+    }
+
+    p {
+        color: $neutral-cool-gray;
+        margin: 10px 0
+    }
+
+    .cardsPlan {
+        width: 100%;
+        border: 1px solid $neutral-light-gray;
+        border-radius: 8px;
+        margin: 10px 0;
+        background-color: rgba(255, 255, 255, .35);
+
+        .contentPlan {
+            padding: 10px 15px;
+            @include directionToX;
+            align-items: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-right: 15px;
+            }
+
+            .planInfo {
+                p {
+                    margin: 5px 0;
+                }
+
+                .titleInfo {
+                    color: $primary-marin-blue;
+                    font-weight: $fontBold;
+                    font-size: 16px;
+                }
+
+                .priceInfo {
+                    color: $neutral-cool-gray;
+                    font-weight: $fontRegular;
+                    font-size: 14px;
+                }
+
+                .promo {
+                    color: $primary-marin-blue;
+                    font-weight: $fontRegular;
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+
+    .switch {
+        width: 100%;
+        @include directionToX;
+        justify-content: center;
+        padding: 30px 0;
+
+        p {
+            font-weight: $fontMedium;
+        }
+    }
+}
+
+@include apply-at-lg-size {
+    .contentCard {
+        width: 100%;
+
+        h2 {
+            color: $primary-marin-blue;
+            margin-top: 0;
+            font-size: 32px;
+        }
+
+        p {
+            color: $neutral-cool-gray;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .plans {
+            @include directionToX;
+            align-items: center;
+            gap: 30px;
+
+            .cardsPlan {
+                border: 1px solid $neutral-light-gray;
+                border-radius: 8px;
+                // margin: 10px 0;
+                background-color: rgba(255, 255, 255, .35);
+
+                .contentPlan {
+                    width: 120px;
+                    height: 155px;
+                    padding: 15px 15px;
+                    @include directionToY;
+                    align-items: start;
+                    justify-content: space-between;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 15px;
+                    }
+
+                    .planInfo {
+                        p {
+                            margin: 5px 0;
+                        }
+
+                        .titleInfo {
+                            color: $primary-marin-blue;
+                            font-weight: $fontBold;
+                            font-size: 16px;
+                        }
+
+                        .priceInfo {
+                            color: $neutral-cool-gray;
+                            font-weight: $fontRegular;
+                            font-size: 14px;
+                        }
+
+                        .promo {
+                            color: $primary-marin-blue;
+                            font-weight: $fontRegular;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+        .switch {
+            width: 100%;
+            @include directionToX;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: $neutral-magnolia;
+
+            p {
+                font-weight: $fontMedium;
+            }
+        }
+    }
+}
