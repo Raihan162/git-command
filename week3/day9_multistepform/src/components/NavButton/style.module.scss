@@ -1,0 +1,31 @@
+@import '../../styles/base.scss';
+
+.navButton {
+    background-color: $neutral-white;
+    width: 100%;
+
+    .buttons {
+        margin: 20px;
+        @include directionToX;
+        justify-content: space-between;
+
+        .back {
+            background-color: transparent;
+            border: 0;
+            color: $neutral-cool-gray;
+            font-weight: $fontMedium;
+            cursor: pointer;
+        }
+
+        .next {
+            background-color: $primary-marin-blue;
+            color: $neutral-white;
+            border: 0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: $fontMedium;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}

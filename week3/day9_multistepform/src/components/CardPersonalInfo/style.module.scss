@@ -1,0 +1,35 @@
+@import '../../styles/base.scss';
+
+.contentCard {
+    width: 100%;
+
+    h2 {
+        color: $primary-marin-blue;
+        margin-top: 20px;
+    }
+
+    p {
+        color: $neutral-cool-gray;
+        margin: 10px 0
+    }
+
+    .inputs {
+        @include directionToY;
+        gap: 5px;
+        margin: 10px 0;
+
+        .label {
+            font-size: 12px;
+            font-weight: $fontRegular;
+            color: $primary-marin-blue;
+        }
+
+        .input {
+            padding: 10px 16px;
+            font-weight: $fontMedium;
+            color: $neutral-cool-gray;
+            border: 1px solid $neutral-light-gray;
+            border-radius: 5px;
+        }
+    }
+}

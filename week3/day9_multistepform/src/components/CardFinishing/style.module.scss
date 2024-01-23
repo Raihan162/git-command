@@ -1,0 +1,107 @@
+@import '../../styles/base.scss';
+
+.contentCard {
+    width: 100%;
+
+    h2 {
+        color: $primary-marin-blue;
+        margin-top: 20px;
+    }
+
+    p {
+        color: $neutral-cool-gray;
+        margin: 10px 0
+    }
+
+    .overview {
+        width: 100%;
+
+        .contentOverview {
+            background-color: $netural-alabaster;
+
+            .overviewPlan {
+                border-bottom: 1px solid $neutral-light-gray;
+                padding: 20px 15px;
+                @include directionToX;
+                align-items: center;
+                justify-content: space-between;
+
+                .left {
+                    p {
+                        color: $primary-marin-blue;
+                        font-weight: $fontMedium;
+                        margin: 0;
+                    }
+
+                    button {
+                        border: 0;
+                        background-color: transparent;
+                        color: $neutral-cool-gray;
+                        padding: 0;
+                        text-decoration: underline 2px;
+                        font-size: 14px;
+                    }
+                }
+
+                .right {
+                    p {
+                        color: $primary-marin-blue;
+                        font-weight: $fontBold;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .overviewAddOn {
+                @include directionToX;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 15px;
+
+                .left {
+                    p {
+                        color: $neutral-cool-gray;
+                        font-weight: $fontMedium;
+                        margin: 0;
+                        font-size: 14px;
+                    }
+                }
+
+                .right {
+                    p {
+                        color: $primary-marin-blue;
+                        font-weight: $fontRegular;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .overviewTotal {
+            @include directionToX;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 15px;
+
+            .left {
+                p {
+                    color: $neutral-cool-gray;
+                    font-weight: $fontMedium;
+                    margin: 0;
+                    font-size: 14px;
+                }
+            }
+
+            .right {
+                p {
+                    color: $primary-purplish-blue;
+                    font-weight: $fontBold;
+                    margin: 0;
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+
+}

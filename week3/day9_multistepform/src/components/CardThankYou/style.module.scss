@@ -1,0 +1,50 @@
+@import '../../styles/base.scss';
+
+.contentCard {
+    width: 100%;
+    @include directionToY;
+    align-items: center;
+    padding: 50px 0;
+
+    img {
+        width: 55px;
+    }
+
+    h2 {
+        color: $primary-marin-blue;
+        margin-top: 20px;
+    }
+
+    p {
+        color: $neutral-cool-gray;
+        margin: 10px 0;
+        text-align: center;
+        line-height: 25px;
+    }
+}
+
+@include apply-at-lg-size {
+    .contentCard {
+        width: 100%;
+        @include directionToY;
+        align-items: center;
+        padding: 50px 0;
+
+        img {
+            width: 55px;
+        }
+
+        h2 {
+            color: $primary-marin-blue;
+            margin-top: 20px;
+        }
+
+        p {
+            color: $neutral-cool-gray;
+            margin: 10px 0;
+            text-align: center;
+            line-height: 25px;
+            width: 70%;
+        }
+    }
+}
