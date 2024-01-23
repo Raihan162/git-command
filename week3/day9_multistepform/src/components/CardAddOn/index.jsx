@@ -75,7 +75,7 @@ export default function CardAddOn() {
             {
                 addOns?.map((item, index) => {
                     return (
-                        <div key={index} className={classes.cardsPlan} style={{ borderColor: personalInfo.addOns.find((data) => data.type === item.type) ? 'hsl(243, 100%, 62%)' : null }}>
+                        <div key={index} className={classes.cardsPlan} style={{ borderColor: personalInfo.addOns.find((data) => data.type === item.type) ? 'hsl(243, 100%, 62%)' : null, backgroundColor: personalInfo.addOns.find((data) => data.type === item.type) ? 'hsl(216, 100%, 97%)' : null }}>
                             <div className={classes.contentPlan}>
                                 <div className={classes.leftContent}>
                                     <input
